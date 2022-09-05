@@ -1,11 +1,15 @@
-window.addEventListener("DOMLoaded", getViewConuter);
+window.addEventListener("DOMContentLoaded", (event) => {
+    getViewConuter();
+});
 
-const apiPath = "";
+const apiPath = "http://localhost:7071/api/GetResumeCounter";
 
 const getViewConuter = () => {
     fetch(apiPath).then(response => {
-        console.log("Setting up the view counter after api call");
-        document.getElementById("counter").innerText = response.json;
+        return response.json();
+    }).then(response => {
+        console.log("API called to get counter!");
+        document.getElementById("counter").innerText = response.count;
     }).catch(error => {
         console.log(error);
     });
