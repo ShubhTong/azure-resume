@@ -1,5 +1,22 @@
 # azure-resume
-My own azure resume, following ACG project video
 
-## First Step
-. Frontend folder contains the website.
+My own azure resume, following [ACG project video.](https://youtu.be/ieYrBWmkfno)
+
+## Demo
+
+[View it live here](https://www.imshubh.info)
+
+## Structure
+
+- `frontend` folder contains the website.
+- `main.js` contains visitor counter code.
+- `backend` contains the Azure Function
+    - `api` is the dotnet 3 version
+- CI/CD files are in the `workflow` directory
+
+## Technical Stack
+
+- `Frontend` HTML, CSS, JS
+- `Backend` C#
+- `Azure` StorageAccount, Cosmos DB, Azure function, CDN
+- `Unit Test` XUnit
