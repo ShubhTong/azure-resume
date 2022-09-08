@@ -6,7 +6,7 @@ const apiPath_Deployed = "https://getreusmecounterazure.azurewebsites.net/api/Ge
 const apiPath_Local = "http://localhost:7071/api/GetResumeCounter";
 
 const getViewConuter = () => {
-    fetch(apiPath_Deployed).then(response => {
+    fetch(apiPath_Local).then(response => {
         return response.json();
     }).then(response => {
         console.log("API called to get counter!");
