@@ -13,3 +13,10 @@ My own azure resume, following [ACG project video.](https://youtu.be/ieYrBWmkfno
 - `backend` contains the Azure Function
     - `api` is the dotnet 3 version
 - CI/CD files are in the `workflow` directory
+
+## Technical Stack
+
+- `Frontend` HTML, CSS, JS
+- `Backend` C#
+- `Azure` StorageAccount, Cosmos DB, Azure function, CDN
+- `Unit Test` XUnit
